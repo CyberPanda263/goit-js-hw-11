@@ -5,5 +5,9 @@ import {search} from "./js/pixabay-api";
 form.addEventListener("submit", event => {
     event.preventDefault();
     const q = form.elements.searchItem.value.replace(" ", "+");
-    search(q);
+    search(q).then(
+        (images) => console.log(images)
+    )
+    .catch((error) => console.log(`error ${error}`));
+
 })
