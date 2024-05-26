@@ -14,6 +14,7 @@ form.addEventListener("submit", event => {
     gallery.innerHTML = "";
     loader.style.display = "block";
     const q = form.elements.searchItem.value.replace(" ", "+");
+    console.log(q.length);
     search(q).then(
         (images) => {
             loader.style.display = "none";

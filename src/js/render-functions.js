@@ -20,7 +20,7 @@ export function renderGallery(images, gallery) {
                 <li class="gallery-item">
                     <div class="gallerys">
                         <a class="gallery-link" href="${image.largeImageURL}">
-                            <img class="gallery-image" src="${image.webformatURL}" alt="${image.tags}";
+                            <img class="gallery-image" src="${image.webformatURL}" alt="${image.tags}" />
                         </a>
                     </div>
                     <div class="gallery-item-description">
