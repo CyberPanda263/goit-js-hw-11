@@ -11,7 +11,7 @@ export function search(q) {
 };
 
 function fetchSearch(options) {
-    return fetch(`https://pixabay.com/api?${options}`)
+    return fetch(`https://pixabay.com/api/?${options}`)
     .then(
       (response) => {
         if (!response.ok) {
