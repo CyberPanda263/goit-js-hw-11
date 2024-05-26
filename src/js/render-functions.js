@@ -47,6 +47,5 @@ export function renderGallery(images, gallery) {
             )
     });
     const addGallery = `${galleryArr.join('')}`;
-    console.log(addGallery);
     gallery.innerHTML = addGallery;
 }
